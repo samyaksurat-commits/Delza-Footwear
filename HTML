@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Footwear Surat | Find Your Perfect Pair</title>
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #e63946;
+            --light: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--primary); background: var(--light); }
+        
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover; background-position: center;
+            height: 60vh; display: flex; align-items: center; justify-content: center;
+            text-align: center; color: white; padding: 0 20px;
+        }
+        
+        .hero-content h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero-content p { font-size: 1.2rem; margin-bottom: 30px; }
+
+        /* CTA Button Styling */
+        .cta-button {
+            background-color: var(--accent);
+            color: white; padding: 15px 35px;
+            text-decoration: none; font-weight: bold;
+            border-radius: 5px; transition: 0.3s;
+            display: inline-block;
+        }
+        .cta-button:hover { background-color: #c12a36; transform: translateY(-2px); }
+
+        /* Store Grid */
+        .container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: scale(1.02); }
+        .card h3 { margin-top: 0; color: var(--accent); }
+        
+        /* Footer/CTS */
+        footer { background: var(--primary); color: white; text-align: center; padding: 40px 20px; margin-top: 50px; }
+        .cts-links a { color: #adb5bd; margin: 0 15px; text-decoration: none; font-size: 0.9rem; }
+        .cts-links a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="hero-content">
+        <h1>Step Into Style in Surat</h1>
+        <p>Discover the latest collection of premium sneakers, formal shoes, and sports gear.</p>
+        <a href="#stores" class="cta-button">EXPLORE TOP COLLECTIONS</a>
+    </div>
+</header>
+
+<div class="container" id="stores">
+    <h2 style="text-align: center; margin-bottom: 40px;">Featured Brands & Stores</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Campus Shoes</h3>
+            <p>Running, Walking & Casual footwear for the active lifestyle.</p>
+            <p><strong>Location:</strong> VR Mall, Dumas Road</p>
+            <a href="https://stores.campusshoes.com" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Store →</a>
+        </div>
+        <div class="card">
+            <h3>Metro Shoes</h3>
+            <p>Quality footwear for men, women, and kids for every occasion.</p>
+            <p><strong>Location:</strong> Solaris Kode, VIP Road</p>
+            <a href="https://stores.metroshoes.com" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Store →</a>
+        </div>
+        <div class="card">
+            <h3>Skechers</h3>
+            <p>Leading the way in comfort technology and trendy athletic designs.</p>
+            <p><strong>Location:</strong> Ram Nagar, Katargam</p>
+            <a href="https://www.skechers.in" style="color: var(--accent); text-decoration: none; font-weight: bold;">Shop Online →</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Surat Footwear Guide. Your destination for style.</p>
+    <div class="cts-links">
+        <a href="#">Contact Us</a> | <a href="#">Store Locator</a> | <a href="#">Follow on Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>

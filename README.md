@@ -1,1 +1,0 @@
-# Delza-Footwear
