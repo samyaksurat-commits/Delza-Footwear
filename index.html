@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Footwear | Premium Brands & Local Stores</title>
+    <style>
+        /* Core Brand Colors */
+        :root {
+            --primary: #000000;
+            --accent: #FF3E3E;
+            --text-dark: #1A1A1A;
+            --text-light: #F4F4F4;
+            --bg-gray: #FAFAFA;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        body { background-color: var(--bg-gray); color: var(--text-dark); line-height: 1.6; }
+
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 25px 8%; background: white; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.4rem; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; }
+        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-left: 30px; text-transform: uppercase; }
+
+        /* Hero Section */
+        .hero {
+            height: 85vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero h1 { font-size: 4rem; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; letter-spacing: -1px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 35px; opacity: 0.9; }
+
+        /* CTA Buttons */
+        .cta-container { display: flex; gap: 20px; }
+        .btn { padding: 18px 40px; border-radius: 2px; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: 0.3s; text-transform: uppercase; }
+        .btn-primary { background: var(--accent); color: white; border: none; }
+        .btn-primary:hover { background: #d32f2f; transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: white; color: black; }
+
+        /* Brand Grid */
+        .section { padding: 100px 8%; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.2rem; text-transform: uppercase; letter-spacing: 1px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        
+        .brand-card { background: white; padding: 40px; border: 1px solid #f0f0f0; transition: 0.4s; }
+        .brand-card:hover { border-color: var(--accent); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .brand-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        .brand-card p { color: #666; font-size: 0.95rem; margin-bottom: 20px; }
+        .location-tag { font-weight: bold; color: var(--accent); font-size: 0.8rem; text-transform: uppercase; }
+
+        /* Footer */
+        footer { background: var(--primary); color: white; padding: 50px 8%; text-align: center; }
+        footer p { opacity: 0.5; font-size: 0.8rem; letter-spacing: 1px; }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .cta-container { flex-direction: column; width: 100%; max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Footwear.SRT</div>
+        <div class="nav-links">
+            <a href="#brands">Brands</a>
+            <a href="contact.html">Partner With Us</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Elevate Your Step.</h1>
+        <p>Your local guide to the best branded shoes in Surat. From running gears at VR Mall to luxury loafers on VIP Road.</p>
+        <div class="cta-container">
+            <a href="#brands" class="btn btn-primary">Browse Brands</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Expert</a>
+        </div>
+    </section>
+
+    <section class="section" id="brands">
+        <div class="section-header">
+            <h2>Authorized Brand Partners</h2>
+        </div>
+        <div class="grid">
+            <div class="card brand-card">
+                <h3>Campus Shoes</h3>
+                <p>Innovative running and walking shoes designed for the active lifestyle.</p>
+                <span class="location-tag">📍 VR Mall, Dumas Road</span>
+            </div>
+            <div class="card brand-card">
+                <h3>Metro Shoes</h3>
+                <p>Surat's go-to for premium formal footwear and wedding collections.</p>
+                <span class="location-tag">📍 Solaris Kode, VIP Road</span>
+            </div>
+            <div class="card brand-card">
+                <h3>Skechers</h3>
+                <p>Combining comfort technology with global fashion trends.</p>
+                <span class="location-tag">📍 Ram Nagar, Katargam</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 SURAT FOOTWEAR HUB. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
